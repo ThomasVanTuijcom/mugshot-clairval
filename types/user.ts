@@ -8,4 +8,6 @@ export interface User {
   city: string
   jobTitle?: string
   company?: string
+  followers: number
+  following: number
 }

@@ -12,7 +12,7 @@ const pollerOne = Poller_One({
 
 export default function Nav() {
 	return (
-		<aside className="border-b bg-white px-2 py-4 md:sticky md:top-0 md:h-screen md:bg-(--secondary) md:px-4">
+		<aside className="border-b border-(--primary) bg-white px-2 py-4 md:sticky md:top-0 md:h-screen md:bg-(--secondary) md:px-4">
 			<div className="flex items-center justify-between md:justify-start">
 				<Link href="/" className="mr-10 flex items-center gap-2">
 					<Image

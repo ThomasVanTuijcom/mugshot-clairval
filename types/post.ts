@@ -6,7 +6,7 @@ export interface Post {
 	imageUrl?: string;
 
 	createdAt: string;
-  hashtag?: Array<String>;
+	hashtag?: Array<String>;
 
 	stats: {
 		likes: number;

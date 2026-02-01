@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -10,6 +10,10 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
 	variable: "--font-geist-mono",
+	subsets: ["latin"],
+});
+
+const jakartaSans = Plus_Jakarta_Sans({
 	subsets: ["latin"],
 });
 
@@ -26,7 +30,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistMono.variable} ${geistSans.variable} antialiased`}
+				className={`${jakartaSans.className}`}
 			>
 				<div className="grid grid-rows-[auto_1fr] md:grid-cols-[240px_1fr] md:grid-rows-1">
 					<Nav />

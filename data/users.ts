@@ -7,7 +7,9 @@ export const users: User[] = [
 		avatarUrl: "/avatars/beluga.webp",
 		backgroundUrl: "/avatars/beluga.webp",
 		role: "Directrice de l’école de Clairval",
-    city: "Clairval"
+		city: "Clairval",
+		followers: 1000,
+		following: 200
 	},
 	{
 		username: "lea.gabriel",
@@ -15,7 +17,9 @@ export const users: User[] = [
 		avatarUrl: "/avatars/beluga.webp",
 		backgroundUrl: "/avatars/beluga.webp",
 		role: "Lieutenant de police",
-    city: "Clairval"
+		city: "Clairval",
+		followers: 1000,
+		following: 200
 	},
 	{
 		username: "steph.maurice",
@@ -23,7 +27,9 @@ export const users: User[] = [
 		avatarUrl: "/avatars/beluga.webp",
 		backgroundUrl: "/avatars/beluga.webp",
 		role: "Photographe indépendant",
-    city: "Clairval"
+		city: "Clairval",
+		followers: 1000,
+		following: 200
 	},
 	{
 		username: "olivia.twift",
@@ -31,17 +37,21 @@ export const users: User[] = [
 		avatarUrl: "/avatars/beluga.webp",
 		backgroundUrl: "/avatars/beluga.webp",
 		role: "Chanteuse professionnelle",
-    city: "Clairval"
+		city: "Clairval",
+		followers: 1000,
+		following: 200
 	},
-  {
+	{
 		username: "baptiste.versille",
 		name: "Baptiste Versille",
 		avatarUrl: "/avatars/baptiste_versille.png",
 		backgroundUrl: "/background/baptiste_versille.jpg",
 		role: "CEO de TechnoTech",
-    bio: "Le temps est le seul luxe que je ne m'offre pas",
-    city: "Clairval",
-    jobTitle: "CEO",
-    company: "TechnoTech"
+		bio: "Le temps est le seul luxe que je ne m'offre pas",
+		city: "Clairval",
+		jobTitle: "CEO",
+		company: "TechnoTech",
+		followers: 1000,
+		following: 200
 	},
 ];

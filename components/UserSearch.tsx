@@ -6,11 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { users } from "@/data/users";
 import clsx from "clsx";
-import { Plus_Jakarta_Sans } from "next/font/google";
-
-const jakartaSans = Plus_Jakarta_Sans({
-	subsets: ["latin"],
-});
 
 type Props = {
 	className?: string;
@@ -30,7 +25,7 @@ export default function UserSearch({ className }: Props) {
 					u.username.toLowerCase().includes(q)
 				);
 			})
-			.slice(0, 6); // limit results
+			.slice(0, 6);
 	}, [query]);
 
 	return (
@@ -47,7 +42,7 @@ export default function UserSearch({ className }: Props) {
 				placeholder="Rechercher"
 				value={query}
 				onChange={(e) => setQuery(e.target.value)}
-				className={`${jakartaSans.className} w-full rounded-full border border-[#cbd5e1] py-2 pr-4 pl-10 text-sm text-(--tertiary) placeholder:text-(--tertiary) placeholder:opacity-60 focus:ring-2 focus:ring-(--primary) focus:outline-none`}
+				className="w-full rounded-full border border-[#cbd5e1] py-2 pr-4 pl-10 text-sm text-(--tertiary) placeholder:text-(--tertiary) placeholder:opacity-60 focus:ring-2 focus:ring-(--primary) focus:outline-none"
 			/>
 
 			{query.trim() && (
