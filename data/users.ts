@@ -4,12 +4,12 @@ export const users: User[] = [
 	{
 		username: "amanda.belami",
 		name: "Amanda Belami",
-		avatarUrl: "/avatars/beluga.webp",
 		backgroundUrl: "/avatars/beluga.webp",
 		role: "Directrice de l’école de Clairval",
 		city: "Clairval",
 		followers: 1000,
-		following: 200
+		following: 200,
+		private: false
 	},
 	{
 		username: "lea.gabriel",
@@ -19,7 +19,8 @@ export const users: User[] = [
 		role: "Lieutenant de police",
 		city: "Clairval",
 		followers: 1000,
-		following: 200
+		following: 200,
+		private: false
 	},
 	{
 		username: "steph.maurice",
@@ -29,7 +30,8 @@ export const users: User[] = [
 		role: "Photographe indépendant",
 		city: "Clairval",
 		followers: 1000,
-		following: 200
+		following: 200,
+		private: false
 	},
 	{
 		username: "olivia.twift",
@@ -39,7 +41,8 @@ export const users: User[] = [
 		role: "Chanteuse professionnelle",
 		city: "Clairval",
 		followers: 1000,
-		following: 200
+		following: 200,
+		private: false
 	},
 	{
 		username: "baptiste.versille",
@@ -52,6 +55,228 @@ export const users: User[] = [
 		jobTitle: "CEO",
 		company: "TechnoTech",
 		followers: 1000,
-		following: 200
+		following: 200,
+	
+		private: false
+	},
+	{
+		username: "tattoo_nebula",
+		name: "InkNebula - Tattoo",
+		avatarUrl: "/avatars/inknebula.jpg",
+		backgroundUrl: "/background/inknebula.jpg",
+		role: "Tatoueur",
+		bio: "Ton idée, mon trait",
+		city: "Clairval",
+		jobTitle: "Tattoo Artiste",
+		company: "InkNebula",
+		followers: 899,
+		following: 125,
+		private: false
+	},
+	//Random data
+	{
+		username: "clairval.inside",
+		name: "Clara Morin",
+		role: "Journaliste locale",
+		city: "Clairval",
+		jobTitle: "Journaliste",
+		company: "Le Clairvalien",
+		followers: 842,
+		following: 310,
+		private: false,
+	},
+
+	{
+		username: "securite_jb",
+		name: "Julien Bernard",
+		role: "Responsable sécurité",
+		bio: "La prévention avant tout.",
+		city: "Clairval",
+		company: "Banque de Clairval",
+		followers: 421,
+		following: 180,
+		private: true,
+	},
+
+	{
+		username: "amelie.crea",
+		name: "Amélie Robert",
+		bio: "Café ☕ design 🎨 idées 💡",
+		city: "Clairval",
+		jobTitle: "Graphiste",
+		followers: 1290,
+		following: 980,
+		private: false,
+	},
+
+	{
+		username: "luc_politik",
+		name: "Luc Perrin",
+		role: "Conseiller municipal",
+		city: "Clairval",
+		followers: 654,
+		following: 95,
+		private: true,
+	},
+
+	{
+		username: "sd.photography",
+		name: "Sarah Duval",
+		bio: "Photographier l’instant 📸",
+		city: "Clairval",
+		jobTitle: "Photographe",
+		company: "Studio Duval",
+		followers: 2100,
+		following: 870,
+		private: false,
+	},
+
+	{
+		username: "clientplus",
+		name: "Maxime Leroy",
+		city: "Clairval",
+		jobTitle: "Chargé de clientèle",
+		company: "Banque de Clairval",
+		followers: 233,
+		following: 340,
+		private: true,
+	},
+
+	{
+		username: "emma.lawlife",
+		name: "Emma Fournier",
+		city: "Clairval",
+		followers: 512,
+		following: 690,
+		private: false,
+	},
+
+	{
+		username: "nextwave_ceo",
+		name: "Nicolas Girard",
+		role: "Entrepreneur",
+		bio: "Les opportunités ne se présentent pas, elles se créent.",
+		city: "Clairval",
+		company: "NextWave",
+		followers: 1780,
+		following: 410,
+		private: false,
+	},
+
+	{
+		username: "slowlaura",
+		name: "Laura Martin",
+		bio: "Yoga, bien-être et slow life 🧘‍♀️",
+		city: "Clairval",
+		followers: 980,
+		following: 1200,
+		private: true,
+	},
+
+	{
+		username: "root_thomas",
+		name: "Thomas Rivière",
+		role: "Informaticien",
+		city: "Clairval",
+		jobTitle: "Administrateur réseau",
+		company: "TechnoTech",
+		followers: 390,
+		following: 210,
+		private: false,
+	},
+
+	{
+		username: "vm_guichet",
+		name: "Valérie Moreau",
+		city: "Clairval",
+		jobTitle: "Employée de banque",
+		company: "Banque de Clairval",
+		followers: 305,
+		following: 260,
+		private: true,
+	},
+
+	{
+		username: "kevin_fitlife",
+		name: "Kévin Roux",
+		bio: "Sport, motivation et discipline 💪",
+		city: "Clairval",
+		followers: 1450,
+		following: 530,
+		private: false,
+	},
+
+	{
+		username: "compta.mlf",
+		name: "Marie Lefèvre",
+		role: "Comptable",
+		city: "Clairval",
+		company: "Cabinet Lefèvre",
+		followers: 220,
+		following: 140,
+		private: true,
+	},
+
+	{
+		username: "histoire_en_clairval",
+		name: "Antoine Petit",
+		city: "Clairval",
+		jobTitle: "Professeur d’histoire",
+		followers: 610,
+		following: 400,
+		private: false,
+	},
+
+	{
+		username: "ines_marketing",
+		name: "Inès Benali",
+		bio: "Marketing, stratégie et créativité.",
+		city: "Clairval",
+		jobTitle: "Responsable marketing",
+		company: "TechnoTech",
+		followers: 1320,
+		following: 620,
+		private: false,
+	},
+
+	{
+		username: "etude_durand",
+		name: "Paul Durand",
+		role: "Notaire",
+		city: "Clairval",
+		followers: 180,
+		following: 75,
+		private: true,
+	},
+
+	{
+		username: "camille.nocturne",
+		name: "Camille Noël",
+		bio: "Musique, écriture et nuits blanches 🎶",
+		city: "Clairval",
+		followers: 2050,
+		following: 910,
+		private: false,
+	},
+
+	{
+		username: "immo_flo",
+		name: "Florian Chevalier",
+		role: "Agent immobilier",
+		city: "Clairval",
+		company: "Clairval Immo",
+		followers: 560,
+		following: 330,
+		private: false,
+	},
+
+	{
+		username: "psy_notes",
+		name: "Nadia Klein",
+		city: "Clairval",
+		jobTitle: "Psychologue",
+		followers: 740,
+		following: 210,
+		private: true,
 	},
 ];

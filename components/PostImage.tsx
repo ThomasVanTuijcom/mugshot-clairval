@@ -12,23 +12,20 @@ export default function PostImage({ src }: { src: string }) {
 			<button
 				type="button"
 				onClick={() => setOpen(true)}
-				className="relative cursor-pointer mb-3 w-full overflow-hidden rounded-lg"
+				className="relative mb-3 w-full overflow-hidden rounded-lg bg-black"
+				aria-label="Ouvrir l'image"
 			>
 				<Image
 					src={src}
 					alt=""
-					width={800}
-					height={600}
-					className="h-auto w-full object-contain"
+					width={760}
+					height={760} // neutral ratio, overridden by real image
+					className="mx-auto h-auto max-h-[500px] w-full object-contain"
+					sizes="(max-width: 640px) 100vw, 760px"
 				/>
 			</button>
 
-			{open && (
-				<ImageLightbox
-					src={src}
-					onClose={() => setOpen(false)}
-				/>
-			)}
+			{open && <ImageLightbox src={src} onClose={() => setOpen(false)} />}
 		</>
 	);
 }

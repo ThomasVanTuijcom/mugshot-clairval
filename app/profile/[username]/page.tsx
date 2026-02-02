@@ -18,17 +18,32 @@ export default async function ProfilePage({ params }: Props) {
 	if (!user) notFound();
 	const userPosts = getPostsByUser(user.username);
 
+	if (user.private) {
+		return (
+			<div className="flex flex-col items-center px-4 py-10 text-center text-sm text-gray-500">
+				Ce profil est privé.
+			</div>
+		);
+	}
+
 	return (
 		<div className="divide-y divide-gray-200">
 			<ProfilePersonalInformation user={user} />
 			<ProfileGallery user={user} initialLimit={9} />
 			<div className="p-4">
 				<h4 className="mb-2 text-lg font-bold">Publications</h4>
-				<div className="divide-y divide-gray-200">
-					{userPosts.map((post) => (
-						<PostCard key={post.id} post={post} />
-					))}
-				</div>
+
+				{userPosts.length === 0 ? (
+					<p className="text-sm text-gray-500">
+						Aucune publication pour le moment.
+					</p>
+				) : (
+					<div className="divide-y divide-gray-200">
+						{userPosts.map((post) => (
+							<PostCard key={post.id} post={post} />
+						))}
+					</div>
+				)}
 			</div>
 		</div>
 	);

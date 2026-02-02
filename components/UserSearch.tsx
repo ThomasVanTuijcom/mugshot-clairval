@@ -56,13 +56,15 @@ export default function UserSearch({ className }: Props) {
 										className="flex items-center gap-3 px-3 py-2 hover:bg-gray-50"
 										onClick={() => setQuery("")}
 									>
-										<Image
-											src={u.avatarUrl}
-											alt={u.name}
-											width={28}
-											height={28}
-											className="rounded-full"
-										/>
+										<div className="relative h-7 w-7 shrink-0 overflow-hidden rounded-full">
+											<Image
+												src={u.avatarUrl || "/avatars/unknown.png"}
+												alt={u.name}
+												fill
+												className="object-cover"
+												sizes="28px"
+											/>
+										</div>
 										<div className="min-w-0">
 											<p className="truncate text-sm font-medium">{u.name}</p>
 											<p className="truncate text-xs text-gray-500">

@@ -11,5 +11,13 @@ export default async function ProfilePhotosPage({ params }: Props) {
 	const user = getUserByUsername(username);
 	if (!user) notFound();
 
+	if (user.private) {
+		return (
+			<div className="flex flex-col items-center px-4 py-10 text-center text-sm text-gray-500">
+				Ce profil est privé.
+			</div>
+		);
+	}
+
 	return <ProfileGallery user={user} cols={2} initialLimit={8} allowShowAll={true}/>;
 }

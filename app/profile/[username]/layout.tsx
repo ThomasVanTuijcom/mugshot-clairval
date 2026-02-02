@@ -14,29 +14,35 @@ export default async function ProfileLayout({
 }) {
 	const { username } = await params;
 	const user = getUserByUsername(username);
-    console.log(user);
+	console.log(user);
 	if (!user) notFound();
+
+	const avatarUrl = user.avatarUrl || "/avatars/unknown.png";
 
 	return (
 		<main className="flex flex-col items-center md:px-10">
 			<UserSearch className="mt-4 mb-10 hidden max-w-[742px] md:block" />
 			<section className="w-full max-w-[760px] overflow-hidden bg-white">
 				<div className="relative h-[150px] w-full border-b border-(--primary)">
-					<Image
-						src={user.backgroundUrl}
-						alt="Bannière"
-						fill
-						className="object-cover"
-						sizes="100vw"
-						priority
-					/>
+					{user.backgroundUrl ? (
+						<Image
+							src={user.backgroundUrl}
+							alt="Bannière"
+							fill
+							className="object-cover"
+							sizes="100vw"
+							priority
+						/>
+					) : (
+						<div className="h-full w-full bg-gradient-to-br from-gray-200 via-gray-100 to-gray-300" />
+					)}
 				</div>
 
 				<div className="relative px-4 pb-6">
 					<div className="absolute -mt-14">
 						<div className="relative aspect-square w-24 overflow-hidden rounded-full border border-(--primary) sm:w-26">
 							<Image
-								src={user.avatarUrl}
+								src={avatarUrl}
 								alt={user.name}
 								fill
 								className="object-cover"
@@ -74,9 +80,7 @@ export default async function ProfileLayout({
 					<ProfileActions />
 				</div>
 				<ProfileTabs username={user.username} />
-				<div className="divide-y divide-gray-200">
-					{children}
-				</div>
+				<div className="divide-y divide-gray-200">{children}</div>
 			</section>
 		</main>
 	);

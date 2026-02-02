@@ -43,11 +43,17 @@ export default async function PostPage({ params }: Props) {
 		timeStyle: "short",
 	});
 
+	const avatarUrl = author.avatarUrl || "/avatars/unknown.png";
+
 	return (
 		<main className="flex flex-col items-center md:px-10">
 			<UserSearch className="mt-4 mb-10 hidden max-w-[742px] md:block" />
 			<section className="w-full max-w-[760px] overflow-hidden bg-white">
-				<PostNavigation username={author.username} prev={prev ?? undefined} next={next ?? undefined} />
+				<PostNavigation
+					username={author.username}
+					prev={prev ?? undefined}
+					next={next ?? undefined}
+				/>
 				{post.imageUrl && (
 					<div className="w-full bg-black/5">
 						<Image
@@ -64,13 +70,15 @@ export default async function PostPage({ params }: Props) {
 
 				<div className="flex items-center gap-3 px-4 py-4">
 					<Link href={`/profile/${author.username}`} className="shrink-0">
-						<Image
-							src={author.avatarUrl}
-							alt={author.name}
-							width={44}
-							height={44}
-							className="rounded-full"
-						/>
+						<div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full">
+							<Image
+								src={avatarUrl || "/avatars/unknown.png"}
+								alt={author.name}
+								fill
+								className="object-cover"
+								sizes="44px"
+							/>
+						</div>
 					</Link>
 
 					<div className="min-w-0">

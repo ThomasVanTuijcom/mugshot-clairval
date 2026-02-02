@@ -17,6 +17,7 @@ export default function PostCard({ post }: Props) {
 	if (!author) return null;
 
 	const comments = getCommentsWithAuthor(post.id);
+	const avatarUrl = author.avatarUrl || "/avatars/unknown.png";
 
 	return (
 		<article className="w-full bg-white py-5">
@@ -24,13 +25,15 @@ export default function PostCard({ post }: Props) {
 				href={`/profile/${author.username}`}
 				className="mb-3 flex items-center gap-3"
 			>
-				<Image
-					src={author.avatarUrl}
-					alt={author.name}
-					width={40}
-					height={40}
-					className="rounded-full"
-				/>
+				<div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full">
+					<Image
+						src={avatarUrl || "/avatars/unknown.png"}
+						alt={author.name}
+						fill
+						className="object-cover"
+						sizes="40px"
+					/>
+				</div>
 
 				<div>
 					<p className="text-sm text-[14px] font-bold hover:underline">
@@ -43,10 +46,7 @@ export default function PostCard({ post }: Props) {
 			</Link>
 			<p className="mb-3 text-sm">{post.content}</p>
 
-			
-			{post.imageUrl && (
-				<PostImage src={post.imageUrl} />
-			)}
+			{post.imageUrl && <PostImage src={post.imageUrl} />}
 
 			<div className="mb-3 flex flex-wrap gap-x-2 gap-y-1 text-sm">
 				{post.hashtag?.map((hashtag, index) => (
@@ -85,7 +85,7 @@ export default function PostCard({ post }: Props) {
 					<Bookmark className="h-5 w-5" />
 				</div>
 			</div>
-			<CommentSection comments={comments}/>
+			<CommentSection comments={comments} />
 		</article>
 	);
 }

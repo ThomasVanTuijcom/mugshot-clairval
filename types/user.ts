@@ -1,8 +1,8 @@
 export interface User {
   username: string
   name: string
-  avatarUrl: string
-  backgroundUrl: string
+  avatarUrl?: string
+  backgroundUrl?: string
   role?: string
   bio?: string
   city: string
@@ -10,4 +10,5 @@ export interface User {
   company?: string
   followers: number
   following: number
+  private: boolean
 }

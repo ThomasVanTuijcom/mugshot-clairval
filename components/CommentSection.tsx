@@ -22,7 +22,7 @@ type Props = {
 
 export default function CommentSection({ comments }: Props) {
 	return (
-		<div className="py-6">
+		<div className="py-6 px-4">
 			<h3 className="mb-4 text-sm font-bold text-gray-700">Commentaires</h3>
 
 			{comments.length === 0 ? (
@@ -34,7 +34,7 @@ export default function CommentSection({ comments }: Props) {
 					{comments.map((comment) => (
 						<div key={comment.id} className="flex items-start gap-3">
 							<Image
-								src={comment.author.avatarUrl}
+								src={comment.author.avatarUrl || "/avatars/unknown.png"}
 								alt={comment.author.name}
 								width={32}
 								height={32}
