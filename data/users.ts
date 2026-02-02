@@ -9,7 +9,7 @@ export const users: User[] = [
 		city: "Clairval",
 		followers: 1000,
 		following: 200,
-		private: false
+		private: false,
 	},
 	{
 		username: "lea.gabriel",
@@ -20,7 +20,7 @@ export const users: User[] = [
 		city: "Clairval",
 		followers: 1000,
 		following: 200,
-		private: false
+		private: false,
 	},
 	{
 		username: "steph.maurice",
@@ -31,7 +31,7 @@ export const users: User[] = [
 		city: "Clairval",
 		followers: 1000,
 		following: 200,
-		private: false
+		private: false,
 	},
 	{
 		username: "olivia.twift",
@@ -42,7 +42,7 @@ export const users: User[] = [
 		city: "Clairval",
 		followers: 1000,
 		following: 200,
-		private: false
+		private: false,
 	},
 	{
 		username: "baptiste.versille",
@@ -56,8 +56,8 @@ export const users: User[] = [
 		company: "TechnoTech",
 		followers: 1000,
 		following: 200,
-	
-		private: false
+
+		private: false,
 	},
 	{
 		username: "tattoo_nebula",
@@ -71,7 +71,21 @@ export const users: User[] = [
 		company: "InkNebula",
 		followers: 899,
 		following: 125,
-		private: false
+		private: false,
+	},
+	{
+		username: "skinalchemytattoo",
+		name: "Skin Alchemy - Tattoo",
+		avatarUrl: "/avatars/skinalchemy.jpg",
+		backgroundUrl: "/background/skinalchemy.jpg",
+		role: "Tatoueur",
+		bio: "Spécialite du tatouage fineline.",
+		city: "Clairval",
+		jobTitle: "Tattoo Artiste",
+		company: "Skin Alchemy",
+		followers: 624,
+		following: 84,
+		private: false,
 	},
 	//Random data
 	{

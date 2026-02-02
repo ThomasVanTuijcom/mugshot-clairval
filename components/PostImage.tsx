@@ -19,7 +19,7 @@ export default function PostImage({ src }: { src: string }) {
 					src={src}
 					alt=""
 					width={760}
-					height={760} // neutral ratio, overridden by real image
+					height={760}
 					className="mx-auto h-auto max-h-[500px] w-full object-contain"
 					sizes="(max-width: 640px) 100vw, 760px"
 				/>

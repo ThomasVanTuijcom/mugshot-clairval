@@ -176,7 +176,9 @@ export default async function PostPage({ params }: Props) {
 						</Link>
 					</div>
 				</div>
-				<CommentSection comments={comments} />
+				<div className="px-4">
+					<CommentSection comments={comments} />
+				</div>
 			</section>
 		</main>
 	);

@@ -5,13 +5,12 @@ import { getUserByUsername } from "@/lib/data";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-export default async function ProfileLayout({
-	children,
-	params,
-}: {
+type Props = {
 	children: React.ReactNode;
-	params: { username: string };
-}) {
+	params: Promise<{ username: string }>;
+};
+
+export default async function ProfileLayout({ children, params }: Props) {
 	const { username } = await params;
 	const user = getUserByUsername(username);
 	console.log(user);

@@ -22,7 +22,7 @@ type Props = {
 
 export default function CommentSection({ comments }: Props) {
 	return (
-		<div className="py-6 px-4">
+		<div className="py-6">
 			<h3 className="mb-4 text-sm font-bold text-gray-700">Commentaires</h3>
 
 			{comments.length === 0 ? (
