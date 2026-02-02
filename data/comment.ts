@@ -1,4 +1,4 @@
-import type { Comment } from "@/types/comment";
+import type { Comment } from "@/lib/types/comment";
 
 export const comments: Comment[] = [
 	{
@@ -106,6 +106,14 @@ export const comments: Comment[] = [
 	{
 		id: "c13",
 		postId: "p1",
+		authorId: "lea.gabriel",
+		content: "Un cadre sain aide beaucoup les enfants à s’épanouir.",
+		createdAt: "2026-01-30T09:35:00Z",
+		stats: { likes: 10 },
+	},
+	{
+		id: "c14",
+		repostId: "r1",
 		authorId: "lea.gabriel",
 		content: "Un cadre sain aide beaucoup les enfants à s’épanouir.",
 		createdAt: "2026-01-30T09:35:00Z",

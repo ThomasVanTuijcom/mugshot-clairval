@@ -1,6 +1,6 @@
 "use client";
 
-import { Post } from "@/types/post";
+import { Post } from "@/lib/types/post";
 import { ArrowLeft, ArrowRight, X } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

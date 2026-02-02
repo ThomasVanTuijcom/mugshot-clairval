@@ -1,16 +1,6 @@
-import type { User } from "@/types/user";
+import type { User } from "@/lib/types/user";
 
 export const users: User[] = [
-	{
-		username: "amanda.belami",
-		name: "Amanda Belami",
-		backgroundUrl: "/avatars/beluga.webp",
-		role: "Directrice de l’école de Clairval",
-		city: "Clairval",
-		followers: 1000,
-		following: 200,
-		private: false,
-	},
 	{
 		username: "lea.gabriel",
 		name: "Léa Gabriel",
@@ -101,7 +91,27 @@ export const users: User[] = [
 		following: 241,
 		private: false,
 	},
-	//Random data
+	{
+		username: "jumol",
+		name: "Julien Morel",
+		avatarUrl: "/avatars/julienmorel.jpg",
+		backgroundUrl: "/background/julienmarie.png",
+		city: "Clairval",
+		followers: 53,
+		following: 245,
+		private: false,
+	},
+	/*		Random data		*/
+	{
+		username: "amanda.belami",
+		name: "Amanda Belami",
+		backgroundUrl: "/avatars/beluga.webp",
+		role: "Directrice de l’école de Clairval",
+		city: "Clairval",
+		followers: 1000,
+		following: 200,
+		private: false,
+	},
 	{
 		username: "clairval.inside",
 		name: "Clara Morin",

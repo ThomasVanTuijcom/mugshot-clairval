@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getUserGallery } from "@/lib/data";
-import type { User } from "@/types/user";
+import type { User } from "@/lib/types/user";
 
 type Props = {
 	user: User;

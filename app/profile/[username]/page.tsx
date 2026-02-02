@@ -1,10 +1,11 @@
+import FeedCard from "@/components/FeedCard";
 import PostCard from "@/components/PostCard";
 import ProfileActions from "@/components/ProfileActions";
 import ProfileGallery from "@/components/ProfileGallery";
 import ProfilePersonalInformation from "@/components/ProfilePersonalInformation";
 import ProfileTabs from "@/components/ProfileTabs";
 import UserSearch from "@/components/UserSearch";
-import { getPostsByUser, getUserByUsername } from "@/lib/data";
+import { getPostsByUser, getProfileFeed, getUserByUsername } from "@/lib/data";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
@@ -26,6 +27,8 @@ export default async function ProfilePage({ params }: Props) {
 		);
 	}
 
+	const feed = getProfileFeed(user.username);
+
 	return (
 		<div className="divide-y divide-gray-200">
 			<ProfilePersonalInformation user={user} />
@@ -39,8 +42,15 @@ export default async function ProfilePage({ params }: Props) {
 					</p>
 				) : (
 					<div className="divide-y divide-gray-200">
-						{userPosts.map((post) => (
-							<PostCard key={post.id} post={post} />
+						{feed.map((item) => (
+							<FeedCard
+								key={
+									item.kind === "post"
+										? item.post.id
+										: `${item.post.id}-repost-${item.repost.userId}-${item.repost.createdAt}`
+								}
+								item={item}
+							/>
 						))}
 					</div>
 				)}

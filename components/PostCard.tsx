@@ -1,7 +1,7 @@
-import { Post } from "@/types/post";
+import { Post } from "@/lib/types/post";
 import { users } from "@/data/users";
 import Image from "next/image";
-import { getCommentsWithAuthor, getUserByUsername } from "@/lib/data";
+import { getCommentsWithAuthorByPostId, getUserByUsername } from "@/lib/data";
 import { Bookmark, MessageSquareMore, Share2, ThumbsUp } from "lucide-react";
 import { formatCount } from "@/lib/helpers";
 import Link from "next/link";
@@ -10,13 +10,14 @@ import PostImage from "./PostImage";
 
 type Props = {
 	post: Post;
+	commentSection?: boolean
 };
 
-export default function PostCard({ post }: Props) {
+export default function PostCard({ post, commentSection = true }: Props) {
 	const author = getUserByUsername(post.author);
 	if (!author) return null;
 
-	const comments = getCommentsWithAuthor(post.id);
+	const comments = getCommentsWithAuthorByPostId(post.id);
 	const avatarUrl = author.avatarUrl || "/avatars/unknown.png";
 
 	return (
@@ -85,7 +86,9 @@ export default function PostCard({ post }: Props) {
 					<Bookmark className="h-5 w-5" />
 				</div>
 			</div>
-			<CommentSection comments={comments} />
+			{commentSection && (
+				<CommentSection comments={comments} />
+			)}
 		</article>
 	);
 }

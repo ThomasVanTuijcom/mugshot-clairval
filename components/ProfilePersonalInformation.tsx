@@ -1,4 +1,4 @@
-import { User } from "@/types/user";
+import { User } from "@/lib/types/user";
 import { Briefcase, Building2, MapPin } from "lucide-react";
 
 type Props = {

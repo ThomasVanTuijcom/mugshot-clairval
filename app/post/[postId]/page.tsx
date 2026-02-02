@@ -1,7 +1,7 @@
 import UserSearch from "@/components/UserSearch";
 import {
 	getCommentsByPostId,
-	getCommentsWithAuthor,
+	getCommentsWithAuthorByPostId,
 	getPostById,
 	getUserByUsername,
 } from "@/lib/data";
@@ -34,7 +34,7 @@ export default async function PostPage({ params }: Props) {
 	const author = getUserByUsername(post.author);
 	if (!author) notFound();
 
-	const comments = getCommentsWithAuthor(postId);
+	const comments = getCommentsWithAuthorByPostId(postId);
 
 	const { prev, next } = getPrevNextPost(postId);
 

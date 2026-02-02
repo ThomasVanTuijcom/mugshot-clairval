@@ -1,4 +1,4 @@
-import type { Post } from "@/types/post";
+import type { Post } from "@/lib/types/post";
 
 export const posts: Post[] = [
 	{
@@ -166,13 +166,10 @@ export const posts: Post[] = [
 	{
 		id: "p9",
 		author: "tattoo_nebula",
-		content: "Merci à Léna “@len.tat” pour la photo après cicatrisation ✨ Un petit tatouage simple et propre, exactement comme on aime.",
+		content:
+			"Merci à Léna “@len.tat” pour la photo après cicatrisation ✨ Un petit tatouage simple et propre, exactement comme on aime.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"InkNebula",
-			"MinimalTattoo",
-			"Ink",
-		],
+		hashtag: ["InkNebula", "MinimalTattoo", "Ink"],
 		imageUrl: "/posts/inknebula1.jpg",
 		stats: {
 			likes: 1085,
@@ -183,14 +180,10 @@ export const posts: Post[] = [
 	{
 		id: "p10",
 		author: "tattoo_nebula",
-		content: "Merci à @NoaRiv pour ta confiance 🙏 Super session aujourd'hui, hâte de te revoir pour la suite !",
+		content:
+			"Merci à @NoaRiv pour ta confiance 🙏 Super session aujourd'hui, hâte de te revoir pour la suite !",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"InkNebula",
-			"Blackwork",
-			"TattooStudio",
-			"Linework",
-		],
+		hashtag: ["InkNebula", "Blackwork", "TattooStudio", "Linework"],
 		imageUrl: "/posts/inknebula2.jpg",
 		stats: {
 			likes: 1085,
@@ -201,13 +194,10 @@ export const posts: Post[] = [
 	{
 		id: "p11",
 		author: "tattoo_nebula",
-		content: "Merci à @MiloShade pour ta confiance 🙌 Très belle compo, le rendu est canon sur toi !",
+		content:
+			"Merci à @MiloShade pour ta confiance 🙌 Très belle compo, le rendu est canon sur toi !",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"InkNebula",
-			"CustomTattoo",
-			"TattooArtist",
-		],
+		hashtag: ["InkNebula", "CustomTattoo", "TattooArtist"],
 		imageUrl: "/posts/inknebula3.jpg",
 		stats: {
 			likes: 1085,
@@ -218,14 +208,10 @@ export const posts: Post[] = [
 	{
 		id: "p12",
 		author: "tattoo_nebula",
-		content: "Merci à @KairoNox pour ta confiance 🤝 Gros projet, gros respect  merci pour la patience pendant la session.",
+		content:
+			"Merci à @KairoNox pour ta confiance 🤝 Gros projet, gros respect  merci pour la patience pendant la session.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"InkNebula",
-			"BlackAndGrey",
-			"TattooWork",
-			"TattooShop",
-		],
+		hashtag: ["InkNebula", "BlackAndGrey", "TattooWork", "TattooShop"],
 		imageUrl: "/posts/inknebula4.jpg",
 		stats: {
 			likes: 1085,
@@ -236,14 +222,10 @@ export const posts: Post[] = [
 	{
 		id: "p13",
 		author: "tattoo_nebula",
-		content: "Merci à @YanisCrow pour ta confiance 🙏 Placement nickel, lignes nettes super rendu.",
+		content:
+			"Merci à @YanisCrow pour ta confiance 🙏 Placement nickel, lignes nettes super rendu.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"InkNebula",
-			"HandTattoo",
-			"Blackwork",
-			"TattooStudio",
-		],
+		hashtag: ["InkNebula", "HandTattoo", "Blackwork", "TattooStudio"],
 		imageUrl: "/posts/inknebula5.jpg",
 		stats: {
 			likes: 1085,
@@ -254,14 +236,10 @@ export const posts: Post[] = [
 	{
 		id: "p14",
 		author: "tattoo_nebula",
-		content: "Merci à @Sasha pour ta confiance 🖤 On a trouvé l'équilibre parfait entre le lettrage et le visuel.",
+		content:
+			"Merci à @Sasha pour ta confiance 🖤 On a trouvé l'équilibre parfait entre le lettrage et le visuel.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"InkNebula",
-			"LetteringTattoo",
-			"ChestTattoo",
-			"CustomWork",
-		],
+		hashtag: ["InkNebula", "LetteringTattoo", "ChestTattoo", "CustomWork"],
 		imageUrl: "/posts/inknebula6.jpg",
 		stats: {
 			likes: 1085,
@@ -272,14 +250,10 @@ export const posts: Post[] = [
 	{
 		id: "p15",
 		author: "tattoo_nebula",
-		content: "Merci à @MayaOrbit pour ta confiance ✨ Très beau flow sur l'épaule, ça suit parfaitement la ligne du corps.",
+		content:
+			"Merci à @MayaOrbit pour ta confiance ✨ Très beau flow sur l'épaule, ça suit parfaitement la ligne du corps.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"InkNebula",
-			"OrnamentalTattoo",
-			"FineLine",
-			"TattooArtist",
-		],
+		hashtag: ["InkNebula", "OrnamentalTattoo", "FineLine", "TattooArtist"],
 		imageUrl: "/posts/inknebula7.jpg",
 		stats: {
 			likes: 1085,
@@ -290,13 +264,10 @@ export const posts: Post[] = [
 	{
 		id: "p16",
 		author: "skinalchemytattoo",
-		content: "Merci à @LiamNorth pour ta confiance 🙏 Un lettrage nuque, placement parfait.",
+		content:
+			"Merci à @LiamNorth pour ta confiance 🙏 Un lettrage nuque, placement parfait.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"SkinAlchemy",
-			"LetteringTattoo",
-			"FineLine",
-		],
+		hashtag: ["SkinAlchemy", "LetteringTattoo", "FineLine"],
 		imageUrl: "/posts/skinalchemy1.jpg",
 		stats: {
 			likes: 1085,
@@ -307,14 +278,10 @@ export const posts: Post[] = [
 	{
 		id: "p17",
 		author: "skinalchemytattoo",
-		content: "Merci à Nolan pour ta confiance ✨ Très belle pièce, lignes simples et rendu équilibré sur le torse.",
+		content:
+			"Merci à Nolan pour ta confiance ✨ Très belle pièce, lignes simples et rendu équilibré sur le torse.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"SkinAlchemy",
-			"LineworkTattoo",
-			"ChestTattoo",
-			"TattooStudio",
-		],
+		hashtag: ["SkinAlchemy", "LineworkTattoo", "ChestTattoo", "TattooStudio"],
 		imageUrl: "/posts/skinalchemy2.jpg",
 		stats: {
 			likes: 1085,
@@ -325,14 +292,10 @@ export const posts: Post[] = [
 	{
 		id: "p18",
 		author: "skinalchemytattoo",
-		content: "Merci à Inès (@ines.aro) pour ta confiance 🙏 Lettrage fin, lisible et  très beau choix de phrase.",
+		content:
+			"Merci à Inès (@ines.aro) pour ta confiance 🙏 Lettrage fin, lisible et  très beau choix de phrase.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"SkinAlchemy",
-			"LetteringTattoo",
-			"Fineline",
-			"SmallTattoo",
-		],
+		hashtag: ["SkinAlchemy", "LetteringTattoo", "Fineline", "SmallTattoo"],
 		imageUrl: "/posts/skinalchemy3.jpg",
 		stats: {
 			likes: 1085,
@@ -343,13 +306,17 @@ export const posts: Post[] = [
 	{
 		id: "p19",
 		author: "skinalchemytattoo",
-		content: "Merci à Julien  pour ta confiance 🙏 Un petit tattoo fluide, ombrage léger et finitions propres.",
+		content:
+			"Merci à Julien  pour ta confiance 🙏 Un petit tattoo fluide, ombrage léger et finitions propres.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"SkinAlchemy",
-			"FineLineTattoo",
-			"Blackwork",
-			"TattooShop",
+		hashtag: ["SkinAlchemy", "FineLineTattoo", "Blackwork", "TattooShop"],
+		reposts: [
+			{
+				id: "r1",
+				userId: "jumol",
+				createdAt: "2026-02-01T09:40:00Z",
+				message: "Merci à Skin Alchemy pour son travail. ",
+			},
 		],
 		imageUrl: "/posts/skinalchemy4.jpg",
 		stats: {
@@ -361,14 +328,10 @@ export const posts: Post[] = [
 	{
 		id: "p20",
 		author: "skinalchemytattoo",
-		content: "Merci à @TheoRdn pour ta confiance 🤝 Belle session,  et encrage bien uniforme.",
+		content:
+			"Merci à @TheoRdn pour ta confiance 🤝 Belle session,  et encrage bien uniforme.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"SkinAlchemy",
-			"Lettering",
-			"BlackInk",
-			"TattooStudio",
-		],
+		hashtag: ["SkinAlchemy", "Lettering", "BlackInk", "TattooStudio"],
 		imageUrl: "/posts/skinalchemy5.jpg",
 		stats: {
 			likes: 1085,
@@ -379,14 +342,10 @@ export const posts: Post[] = [
 	{
 		id: "p21",
 		author: "skinalchemytattoo",
-		content: "Merci à @JulesKane pour ta confiance 🤝 Petit symbole, avec beaucoup de signification, ultra propre et bien placé.",
+		content:
+			"Merci à @JulesKane pour ta confiance 🤝 Petit symbole, avec beaucoup de signification, ultra propre et bien placé.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"SkinAlchemy",
-			"MinimalTattoo",
-			"NeckTattoo",
-			"Ink",
-		],
+		hashtag: ["SkinAlchemy", "MinimalTattoo", "NeckTattoo", "Ink"],
 		imageUrl: "/posts/skinalchemy6.jpg",
 		stats: {
 			likes: 1085,
@@ -397,14 +356,10 @@ export const posts: Post[] = [
 	{
 		id: "p22",
 		author: "skinalchemytattoo",
-		content: "Merci à @ClaraM pour ta confiance ✨ Minimal, précis, et exactement à la bonne taille.",
+		content:
+			"Merci à @ClaraM pour ta confiance ✨ Minimal, précis, et exactement à la bonne taille.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"SkinAlchemy",
-			"MicroTattoo",
-			"MinimalTattoo",
-			"FineLine",
-		],
+		hashtag: ["SkinAlchemy", "MicroTattoo", "MinimalTattoo", "FineLine"],
 		imageUrl: "/posts/skinalchemy7.jpg",
 		stats: {
 			likes: 1085,
@@ -415,7 +370,8 @@ export const posts: Post[] = [
 	{
 		id: "p23",
 		author: "vaultoftattoo",
-		content: "Merci à Jade L. pour ta confiance. Un old school bien marqué, comme on aime.",
+		content:
+			"Merci à Jade L. pour ta confiance. Un old school bien marqué, comme on aime.",
 		createdAt: "2026-01-30T09:15:00Z",
 		hashtag: [
 			"tattoovault",
@@ -433,14 +389,10 @@ export const posts: Post[] = [
 	{
 		id: "p24",
 		author: "vaultoftattoo",
-		content: "✦ Merci à “MikaR.” pour ce projet ! Mon premier OldSchool type japonais, et je suis fan. ",
+		content:
+			"✦ Merci à “MikaR.” pour ce projet ! Mon premier OldSchool type japonais, et je suis fan. ",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"oldschool",
-			"traditionaljaponese",
-			"inked",
-			"tattoovault",
-		],
+		hashtag: ["oldschool", "traditionaljaponese", "inked", "tattoovault"],
 		imageUrl: "/posts/tattoovault2.jpg",
 		stats: {
 			likes: 1085,
@@ -451,13 +403,10 @@ export const posts: Post[] = [
 	{
 		id: "p25",
 		author: "vaultoftattoo",
-		content: "☼ Un grand merci à Clara B. Pièce old school d'inspiration japonaise, efficace, intemporelle. ",
+		content:
+			"☼ Un grand merci à Clara B. Pièce old school d'inspiration japonaise, efficace, intemporelle. ",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"tattoovault",
-			"traditionaljaponese",
-			"inked",
-		],
+		hashtag: ["tattoovault", "traditionaljaponese", "inked"],
 		imageUrl: "/posts/tattoovault3.jpg",
 		stats: {
 			likes: 1085,
@@ -468,14 +417,10 @@ export const posts: Post[] = [
 	{
 		id: "p26",
 		author: "vaultoftattoo",
-		content: "⛓️ Merci à Noah  pour la confiance. Session clean, vibe vintage, rendu net et photo super esthetique !",
+		content:
+			"⛓️ Merci à Noah  pour la confiance. Session clean, vibe vintage, rendu net et photo super esthetique !",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"tattoovault",
-			"oldschool",
-			"tattooflash",
-			"tattoo",
-		],
+		hashtag: ["tattoovault", "oldschool", "tattooflash", "tattoo"],
 		imageUrl: "/posts/tattoovault4.jpg",
 		stats: {
 			likes: 1085,
@@ -486,7 +431,8 @@ export const posts: Post[] = [
 	{
 		id: "p27",
 		author: "vaultoftattoo",
-		content: "⚓ Merci à Théo M. Du traditionnel assumé, exécuté aux petits soins et chouette collier !",
+		content:
+			"⚓ Merci à Théo M. Du traditionnel assumé, exécuté aux petits soins et chouette collier !",
 		createdAt: "2026-01-30T09:15:00Z",
 		hashtag: [
 			"traditionaltattoo",
@@ -504,14 +450,10 @@ export const posts: Post[] = [
 	{
 		id: "p28",
 		author: "vaultoftattoo",
-		content: "Voici les derniers dessins de Tattoo Vault, si un d'entre eux vous interesse, contactez moi par MP, ou commentez 'Je veuuuux' ",
+		content:
+			"Voici les derniers dessins de Tattoo Vault, si un d'entre eux vous interesse, contactez moi par MP, ou commentez 'Je veuuuux' ",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"flashtattoo",
-			"oldschooltattoo",
-			"tattoodraw",
-			"tattoovault",
-		],
+		hashtag: ["flashtattoo", "oldschooltattoo", "tattoodraw", "tattoovault"],
 		imageUrl: "/posts/tattoovault6.jpg",
 		stats: {
 			likes: 1085,
@@ -522,19 +464,97 @@ export const posts: Post[] = [
 	{
 		id: "p29",
 		author: "vaultoftattoo",
-		content: "✍️ Merci à Lou ! Un petit old school pensé pour s'incorporer avec les autres.",
+		content:
+			"✍️ Merci à Lou ! Un petit old school pensé pour s'incorporer avec les autres.",
 		createdAt: "2026-01-30T09:15:00Z",
-		hashtag: [
-			"oldschool",
-			"tattooartist",
-			"traditionaltattoo",
-			"tattoovault",
-		],
+		hashtag: ["oldschool", "tattooartist", "traditionaltattoo", "tattoovault"],
 		imageUrl: "/posts/tattoovault7.jpg",
 		stats: {
 			likes: 1085,
 			comments: 223,
 			shares: 98,
+		},
+	},
+	{
+		id: "p30",
+		author: "jumol",
+		content: "Et pourquoi pas? ",
+		createdAt: "2026-01-30T09:15:00Z",
+		imageUrl: "/posts/julienmorel1.jpg",
+		stats: {
+			likes: 28,
+			comments: 1,
+			shares: 0,
+		},
+	},
+	{
+		id: "p31",
+		author: "jumol",
+		content: "Bon anniversaire Loïc !",
+		createdAt: "2026-01-30T09:15:00Z",
+		imageUrl: "/posts/julienmorel2.jpg",
+		stats: {
+			likes: 48,
+			comments: 3,
+			shares: 0,
+		},
+	},
+	{
+		id: "p32",
+		author: "jumol",
+		content: "Quelqu'un à une adresse d'antiquaire sur Clairval? ",
+		createdAt: "2026-01-30T09:15:00Z",
+		stats: {
+			likes: 1,
+			comments: 4,
+			shares: 3,
+		},
+	},
+	{
+		id: "p33",
+		author: "jumol",
+		content: "Où est charlie?",
+		createdAt: "2026-01-30T09:15:00Z",
+		imageUrl: "/posts/julienmorel3.jpg",
+		stats: {
+			likes: 25,
+			comments: 1,
+			shares: 0,
+		},
+	},
+	{
+		id: "p34",
+		author: "jumol",
+		content: "♠",
+		createdAt: "2026-01-30T09:15:00Z",
+		imageUrl: "/posts/julienmorel4.jpg",
+		stats: {
+			likes: 39,
+			comments: 1,
+			shares: 0,
+		},
+	},
+	{
+		id: "p35",
+		author: "jumol",
+		content: "Quelqu'un peut me prêter un camion pour samedi?",
+		createdAt: "2026-01-30T09:15:00Z",
+		stats: {
+			likes: 2,
+			comments: 24,
+			shares: 3,
+		},
+	},
+	{
+		id: "p36",
+		author: "jumol",
+		content: "On dirait pas que je suis co actionnaire de Technotech?",
+		createdAt: "2026-01-30T09:15:00Z",
+		imageUrl: "/posts/julienmorel5.jpg",
+		stats: {
+			likes: 25,
+			comments: 0,
+			shares: 0,
 		},
 	},
 ];
