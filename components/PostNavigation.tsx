@@ -17,7 +17,7 @@ export default function PostNavigation({ prev, next, username }: Props) {
 		<div className="flex items-center gap-3 px-4 py-3 text-gray-600">
 			<button
 				type="button"
-				onClick={() => router.back()}
+				onClick={() => router.push(`/profile/${username}`)}
 				className="inline-flex cursor-pointer items-center gap-2 text-sm text-gray-600 hover:underline"
 				aria-label="Retour"
 			>
