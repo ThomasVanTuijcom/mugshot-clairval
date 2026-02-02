@@ -87,6 +87,20 @@ export const users: User[] = [
 		following: 84,
 		private: false,
 	},
+	{
+		username: "vaultoftattoo",
+		name: "Tattoo Vault",
+		avatarUrl: "/avatars/tattoovault.jpg",
+		backgroundUrl: "/background/tattoovault.png",
+		role: "Tatoueur",
+		bio: "Spécialiste du OldSchoolTattoo",
+		city: "Clairval",
+		jobTitle: "Tattoo Artiste",
+		company: "Tattoo Vault",
+		followers: 1004,
+		following: 241,
+		private: false,
+	},
 	//Random data
 	{
 		username: "clairval.inside",
