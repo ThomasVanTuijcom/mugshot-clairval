@@ -45,7 +45,7 @@ export default async function ProfileLayout({ children, params }: Props) {
 								alt={user.name}
 								fill
 								className="object-cover"
-								sizes="96px"
+								sizes="(max-width: 640px) 96px, 200px"
 							/>
 						</div>
 					</div>
